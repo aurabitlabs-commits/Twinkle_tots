@@ -1,0 +1,102 @@
+[
+  {
+    "id": "red",
+    "nameEn": "Red",
+    "nameHi": "लाल",
+    "hex": "#E53935",
+    "objects": [
+      { "name": "Apple", "emoji": "🍎" },
+      { "name": "Tomato", "emoji": "🍅" }
+    ]
+  },
+  {
+    "id": "blue",
+    "nameEn": "Blue",
+    "nameHi": "नीला",
+    "hex": "#1E88E5",
+    "objects": [
+      { "name": "Ocean", "emoji": "🌊" },
+      { "name": "Blueberry", "emoji": "🫐" }
+    ]
+  },
+  {
+    "id": "yellow",
+    "nameEn": "Yellow",
+    "nameHi": "पीला",
+    "hex": "#FDD835",
+    "objects": [
+      { "name": "Sun", "emoji": "☀️" },
+      { "name": "Banana", "emoji": "🍌" }
+    ]
+  },
+  {
+    "id": "green",
+    "nameEn": "Green",
+    "nameHi": "हरा",
+    "hex": "#43A047",
+    "objects": [
+      { "name": "Leaf", "emoji": "🍃" },
+      { "name": "Frog", "emoji": "🐸" }
+    ]
+  },
+  {
+    "id": "orange",
+    "nameEn": "Orange",
+    "nameHi": "नारंगी",
+    "hex": "#FB8C00",
+    "objects": [
+      { "name": "Orange", "emoji": "🍊" },
+      { "name": "Carrot", "emoji": "🥕" }
+    ]
+  },
+  {
+    "id": "purple",
+    "nameEn": "Purple",
+    "nameHi": "बैंगनी",
+    "hex": "#8E24AA",
+    "objects": [
+      { "name": "Grapes", "emoji": "🍇" },
+      { "name": "Eggplant", "emoji": "🍆" }
+    ]
+  },
+  {
+    "id": "pink",
+    "nameEn": "Pink",
+    "nameHi": "गुलाबी",
+    "hex": "#F06292",
+    "objects": [
+      { "name": "Flamingo", "emoji": "🦩" },
+      { "name": "Flower", "emoji": "🌸" }
+    ]
+  },
+  {
+    "id": "brown",
+    "nameEn": "Brown",
+    "nameHi": "भूरा",
+    "hex": "#6D4C41",
+    "objects": [
+      { "name": "Bear", "emoji": "🐻" },
+      { "name": "Chocolate", "emoji": "🍫" }
+    ]
+  },
+  {
+    "id": "black",
+    "nameEn": "Black",
+    "nameHi": "काला",
+    "hex": "#212121",
+    "objects": [
+      { "name": "Crow", "emoji": "🦅" },
+      { "name": "Tire", "emoji": "🛞" }
+    ]
+  },
+  {
+    "id": "white",
+    "nameEn": "White",
+    "nameHi": "सफेद",
+    "hex": "#FAFAFA",
+    "objects": [
+      { "name": "Milk", "emoji": "🥛" },
+      { "name": "Cloud", "emoji": "☁️" }
+    ]
+  }
+]

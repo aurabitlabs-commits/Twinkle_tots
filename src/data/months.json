@@ -1,0 +1,14 @@
+[
+  { "id": "jan", "index": 1,  "en": "January",   "hi": "जनवरी",    "season": "Winter", "cueEmoji": "🪁", "cueName": "Kite",             "cueHi": "पतंग",          "daysCount": 31, "color": "#EDE7F6" },
+  { "id": "feb", "index": 2,  "en": "February",  "hi": "फ़रवरी",   "season": "Winter", "cueEmoji": "🌸", "cueName": "Flowers",          "cueHi": "फूल",           "daysCount": 28, "color": "#EDE7F6" },
+  { "id": "mar", "index": 3,  "en": "March",     "hi": "मार्च",    "season": "Summer", "cueEmoji": "🎨", "cueName": "Splash of colors", "cueHi": "रंगों की फुहार", "daysCount": 31, "color": "#FFF9C4" },
+  { "id": "apr", "index": 4,  "en": "April",     "hi": "अप्रैल",   "season": "Summer", "cueEmoji": "🥭", "cueName": "Mango",            "cueHi": "आम",            "daysCount": 30, "color": "#FFF9C4" },
+  { "id": "may", "index": 5,  "en": "May",       "hi": "मई",       "season": "Summer", "cueEmoji": "🍦", "cueName": "Ice cream",        "cueHi": "आइसक्रीम",       "daysCount": 31, "color": "#FFF9C4" },
+  { "id": "jun", "index": 6,  "en": "June",      "hi": "जून",      "season": "Summer", "cueEmoji": "⛅", "cueName": "First rain cloud", "cueHi": "पहला बादल",     "daysCount": 30, "color": "#FFF9C4" },
+  { "id": "jul", "index": 7,  "en": "July",      "hi": "जुलाई",    "season": "Rains",  "cueEmoji": "☔", "cueName": "Umbrella and rain","cueHi": "छाता और बारिश", "daysCount": 31, "color": "#E0F7FA" },
+  { "id": "aug", "index": 8,  "en": "August",    "hi": "अगस्त",    "season": "Rains",  "cueEmoji": "🇮🇳", "cueName": "National flag",    "cueHi": "तिरंगा",        "daysCount": 31, "color": "#E0F7FA" },
+  { "id": "sep", "index": 9,  "en": "September", "hi": "सितंबर",   "season": "Rains",  "cueEmoji": "🎒", "cueName": "School bag",       "cueHi": "स्कूल बैग",      "daysCount": 30, "color": "#E0F7FA" },
+  { "id": "oct", "index": 10, "en": "October",   "hi": "अक्टूबर",  "season": "Winter", "cueEmoji": "🪔", "cueName": "Diya oil lamp",    "cueHi": "दीया",          "daysCount": 31, "color": "#EDE7F6" },
+  { "id": "nov", "index": 11, "en": "November",  "hi": "नवंबर",    "season": "Winter", "cueEmoji": "🧥", "cueName": "Sweater",          "cueHi": "स्वेटर",        "daysCount": 30, "color": "#EDE7F6" },
+  { "id": "dec", "index": 12, "en": "December",  "hi": "दिसंबर",   "season": "Winter", "cueEmoji": "🎄", "cueName": "Christmas tree",   "cueHi": "क्रिसमस ट्री",   "daysCount": 31, "color": "#EDE7F6" }
+]

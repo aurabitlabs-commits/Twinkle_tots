@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Golden Five-Pointed Star (Tara) -->
+    <path
+        android:fillColor="#FFB300"
+        android:strokeColor="#FFA000"
+        android:strokeWidth="2"
+        android:strokeLineJoin="round"
+        android:pathData="M54,24 L62.2,42.7 L82.5,44.7 L67.2,58.3 L71.6,78.4 L54,67.6 L36.4,78.4 L40.8,58.3 L25.5,44.7 L45.8,42.7 Z" />
+
+    <!-- Cute Eyes -->
+    <path
+        android:fillColor="#2E1C0C"
+        android:pathData="M48,53a3,4 0,1 0,0 -8a3,4 0,1 0,0 8z" />
+    <path
+        android:fillColor="#2E1C0C"
+        android:pathData="M60,53a3,4 0,1 0,0 -8a3,4 0,1 0,0 8z" />
+
+    <!-- Eye Highlights -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M49,50a1.5,1.5 0,1 0,0 -3a1.5,1.5 0,1 0,0 3z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M61,50a1.5,1.5 0,1 0,0 -3a1.5,1.5 0,1 0,0 3z" />
+
+    <!-- Rosy Cheeks -->
+    <path
+        android:fillColor="#FF8A80"
+        android:pathData="M42,59a3.5,3.5 0,1 0,0 -7a3.5,3.5 0,1 0,0 7z" />
+    <path
+        android:fillColor="#FF8A80"
+        android:pathData="M66,59a3.5,3.5 0,1 0,0 -7a3.5,3.5 0,1 0,0 7z" />
+
+    <!-- Smile -->
+    <path
+        android:strokeColor="#2E1C0C"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M49,58 Q54,63 59,58" />
+
+</vector>

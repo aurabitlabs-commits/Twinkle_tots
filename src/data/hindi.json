@@ -1,0 +1,59 @@
+[
+  { "id": "a", "group": "swar", "subgroup": "swar", "letter": "अ", "word": "अनार", "emoji": "🍎", "audioLetter": "अ", "audioPhrase": "अ से अनार", "noPicture": false },
+  { "id": "aa", "group": "swar", "subgroup": "swar", "letter": "आ", "word": "आम", "emoji": "🥭", "audioLetter": "आ", "audioPhrase": "आ से आम", "noPicture": false },
+  { "id": "i", "group": "swar", "subgroup": "swar", "letter": "इ", "word": "इमली", "emoji": "🌰", "audioLetter": "इ", "audioPhrase": "इ से इमली", "noPicture": false },
+  { "id": "ee", "group": "swar", "subgroup": "swar", "letter": "ई", "word": "ईख", "emoji": "🎋", "audioLetter": "ई", "audioPhrase": "ई से ईख", "noPicture": false },
+  { "id": "u", "group": "swar", "subgroup": "swar", "letter": "उ", "word": "उल्लू", "emoji": "🦉", "audioLetter": "उ", "audioPhrase": "उ से उल्लू", "noPicture": false },
+  { "id": "oo", "group": "swar", "subgroup": "swar", "letter": "ऊ", "word": "ऊन", "emoji": "🧶", "audioLetter": "ऊ", "audioPhrase": "ऊ से ऊन", "noPicture": false },
+  { "id": "ri", "group": "swar", "subgroup": "swar", "letter": "ऋ", "word": "ऋषि", "emoji": "🧘", "audioLetter": "ऋ, ऋषि का ऋ", "audioPhrase": "ऋ से ऋषि", "noPicture": false },
+  { "id": "e", "group": "swar", "subgroup": "swar", "letter": "ए", "word": "एक", "emoji": "🎈", "audioLetter": "ए", "audioPhrase": "ए से एक", "noPicture": false },
+  { "id": "ai", "group": "swar", "subgroup": "swar", "letter": "ऐ", "word": "ऐनक", "emoji": "👓", "audioLetter": "ऐ", "audioPhrase": "ऐ से ऐनक", "noPicture": false },
+  { "id": "o", "group": "swar", "subgroup": "swar", "letter": "ओ", "word": "ओखली", "emoji": "🥣", "audioLetter": "ओ", "audioPhrase": "ओ से ओखली", "noPicture": false },
+  { "id": "au", "group": "swar", "subgroup": "swar", "letter": "औ", "word": "औज़ार", "emoji": "🔨", "audioLetter": "औ", "audioPhrase": "औ से औज़ार", "noPicture": false },
+  { "id": "am", "group": "swar", "subgroup": "swar", "letter": "अं", "word": "अंगूर", "emoji": "🍇", "audioLetter": "अं, अंगूर का अं", "audioPhrase": "अं से अंगूर", "noPicture": false },
+  { "id": "ah", "group": "swar", "subgroup": "swar", "letter": "अः", "word": "अहः खाली", "emoji": "✨", "audioLetter": "अहः", "audioPhrase": "अः... अहः खाली", "noPicture": false },
+
+  { "id": "ka", "group": "vyanjan", "subgroup": "ka-varg", "letter": "क", "word": "कबूतर", "emoji": "🕊️", "audioLetter": "क", "audioPhrase": "क से कबूतर", "noPicture": false },
+  { "id": "kha", "group": "vyanjan", "subgroup": "ka-varg", "letter": "ख", "word": "खरगोश", "emoji": "🐇", "audioLetter": "ख", "audioPhrase": "ख से खरगोश", "noPicture": false },
+  { "id": "ga", "group": "vyanjan", "subgroup": "ka-varg", "letter": "ग", "word": "गमला", "emoji": "🪴", "audioLetter": "ग", "audioPhrase": "ग से गमला", "noPicture": false },
+  { "id": "gha", "group": "vyanjan", "subgroup": "ka-varg", "letter": "घ", "word": "घड़ी", "emoji": "⏰", "audioLetter": "घ", "audioPhrase": "घ से घड़ी", "noPicture": false },
+  { "id": "nga", "group": "vyanjan", "subgroup": "ka-varg", "letter": "ङ", "word": "ङ खाली", "emoji": "⭐", "audioLetter": "ङ खाली, अंगा", "audioPhrase": "ङ... ङ खाली", "noPicture": false },
+
+  { "id": "cha", "group": "vyanjan", "subgroup": "cha-varg", "letter": "च", "word": "चम्मच", "emoji": "🥄", "audioLetter": "च", "audioPhrase": "च से चम्मच", "noPicture": false },
+  { "id": "chha", "group": "vyanjan", "subgroup": "cha-varg", "letter": "छ", "word": "छतरी", "emoji": "☂️", "audioLetter": "छ", "audioPhrase": "छ से छतरी", "noPicture": false },
+  { "id": "ja", "group": "vyanjan", "subgroup": "cha-varg", "letter": "ज", "word": "जहाज", "emoji": "🚢", "audioLetter": "ज", "audioPhrase": "ज से जहाज", "noPicture": false },
+  { "id": "jha", "group": "vyanjan", "subgroup": "cha-varg", "letter": "झ", "word": "झंडा", "emoji": "🇮🇳", "audioLetter": "झ", "audioPhrase": "झ से झंडा", "noPicture": false },
+  { "id": "nya", "group": "vyanjan", "subgroup": "cha-varg", "letter": "ञ", "word": "ञ खाली", "emoji": "✨", "audioLetter": "ञ खाली, इयाँ", "audioPhrase": "ञ... ञ खाली", "noPicture": false },
+
+  { "id": "ta", "group": "vyanjan", "subgroup": "ta-varg", "letter": "ट", "word": "टमाटर", "emoji": "🍅", "audioLetter": "ट", "audioPhrase": "ट से टमाटर", "noPicture": false },
+  { "id": "tha", "group": "vyanjan", "subgroup": "ta-varg", "letter": "ठ", "word": "ठेला", "emoji": "🛒", "audioLetter": "ठ", "audioPhrase": "ठ से ठेला", "noPicture": false },
+  { "id": "da", "group": "vyanjan", "subgroup": "ta-varg", "letter": "ड", "word": "डमरू", "emoji": "🪘", "audioLetter": "ड", "audioPhrase": "ड से डमरू", "noPicture": false },
+  { "id": "dha", "group": "vyanjan", "subgroup": "ta-varg", "letter": "ढ", "word": "ढोल", "emoji": "🥁", "audioLetter": "ढ", "audioPhrase": "ढ से ढोल", "noPicture": false },
+  { "id": "na_hard", "group": "vyanjan", "subgroup": "ta-varg", "letter": "ण", "word": "बाण", "emoji": "🏹", "audioLetter": "ण, ण से बाण", "audioPhrase": "ण... ण से बाण", "noPicture": false },
+
+  { "id": "ta_soft", "group": "vyanjan", "subgroup": "ta_soft-varg", "letter": "त", "word": "तरबूज", "emoji": "🍉", "audioLetter": "त", "audioPhrase": "त से तरबूज", "noPicture": false },
+  { "id": "tha_soft", "group": "vyanjan", "subgroup": "ta_soft-varg", "letter": "थ", "word": "थाली", "emoji": "🍽️", "audioLetter": "थ", "audioPhrase": "थ से थाली", "noPicture": false },
+  { "id": "da_soft", "group": "vyanjan", "subgroup": "ta_soft-varg", "letter": "द", "word": "दवात", "emoji": "🖋️", "audioLetter": "द", "audioPhrase": "द से दवात", "noPicture": false },
+  { "id": "dha_soft", "group": "vyanjan", "subgroup": "ta_soft-varg", "letter": "ध", "word": "धनुष", "emoji": "🏹", "audioLetter": "ध", "audioPhrase": "ध से धनुष", "noPicture": false },
+  { "id": "na", "group": "vyanjan", "subgroup": "ta_soft-varg", "letter": "न", "word": "नल", "emoji": "🚰", "audioLetter": "न", "audioPhrase": "न से नल", "noPicture": false },
+
+  { "id": "pa", "group": "vyanjan", "subgroup": "pa-varg", "letter": "प", "word": "पतंग", "emoji": "🪁", "audioLetter": "प", "audioPhrase": "प से पतंग", "noPicture": false },
+  { "id": "pha", "group": "vyanjan", "subgroup": "pa-varg", "letter": "फ", "word": "फल", "emoji": "🍎", "audioLetter": "फ", "audioPhrase": "फ से फल", "noPicture": false },
+  { "id": "ba", "group": "vyanjan", "subgroup": "pa-varg", "letter": "ब", "word": "बतख", "emoji": "🦆", "audioLetter": "ब", "audioPhrase": "ब से बतख", "noPicture": false },
+  { "id": "bha", "group": "vyanjan", "subgroup": "pa-varg", "letter": "भ", "word": "भालू", "emoji": "🐻", "audioLetter": "भ", "audioPhrase": "भ से भालू", "noPicture": false },
+  { "id": "ma", "group": "vyanjan", "subgroup": "pa-varg", "letter": "म", "word": "मछली", "emoji": "🐟", "audioLetter": "म", "audioPhrase": "म से मछली", "noPicture": false },
+
+  { "id": "ya", "group": "vyanjan", "subgroup": "antastha", "letter": "य", "word": "यज्ञ", "emoji": "🔥", "audioLetter": "य", "audioPhrase": "य से यज्ञ", "noPicture": false },
+  { "id": "ra", "group": "vyanjan", "subgroup": "antastha", "letter": "र", "word": "रथ", "emoji": "🛞", "audioLetter": "र", "audioPhrase": "र से रथ", "noPicture": false },
+  { "id": "la", "group": "vyanjan", "subgroup": "antastha", "letter": "ल", "word": "लड्डू", "emoji": "🟡", "audioLetter": "ल", "audioPhrase": "ल से लड्डू", "noPicture": false },
+  { "id": "va", "group": "vyanjan", "subgroup": "antastha", "letter": "व", "word": "वकील", "emoji": "⚖️", "audioLetter": "व", "audioPhrase": "व से वकील", "noPicture": false },
+
+  { "id": "sha", "group": "vyanjan", "subgroup": "ooshma", "letter": "श", "word": "शेर", "emoji": "🦁", "audioLetter": "श, शेर का श", "audioPhrase": "श से शेर", "noPicture": false },
+  { "id": "shha", "group": "vyanjan", "subgroup": "ooshma", "letter": "ष", "word": "षट्कोण", "emoji": "⬡", "audioLetter": "ष, षट्कोण का ष", "audioPhrase": "ष से षट्कोण", "noPicture": false },
+  { "id": "sa", "group": "vyanjan", "subgroup": "ooshma", "letter": "स", "word": "सेब", "emoji": "🍏", "audioLetter": "स, सेब का स", "audioPhrase": "स से सेब", "noPicture": false },
+  { "id": "ha", "group": "vyanjan", "subgroup": "ooshma", "letter": "ह", "word": "हल", "emoji": "🚜", "audioLetter": "ह", "audioPhrase": "ह से हल", "noPicture": false },
+
+  { "id": "ksha", "group": "vyanjan", "subgroup": "sanyukt", "letter": "क्ष", "word": "क्षत्रिय", "emoji": "⚔️", "audioLetter": "क्ष, क्षत्रिय का क्ष", "audioPhrase": "क्ष से क्षत्रिय", "noPicture": false },
+  { "id": "tra", "group": "vyanjan", "subgroup": "sanyukt", "letter": "त्र", "word": "त्रिशूल", "emoji": "🔱", "audioLetter": "त्र, त्रिशूल का त्र", "audioPhrase": "त्र से त्रिशूल", "noPicture": false },
+  { "id": "gya", "group": "vyanjan", "subgroup": "sanyukt", "letter": "ज्ञ", "word": "ज्ञानी", "emoji": "📚", "audioLetter": "ज्ञ, ज्ञानी का ज्ञ", "audioPhrase": "ज्ञ से ज्ञानी", "noPicture": false }
+]

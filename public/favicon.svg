@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="100%" stop-color="#FFB300" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="#FFF3E0" stroke="#FFD54F" stroke-width="4" />
+  <path
+    d="M 50 12 L 61 36 L 87 38 L 67 56 L 73 82 L 50 68 L 27 82 L 33 56 L 13 38 L 39 36 Z"
+    fill="url(#starGrad)"
+    stroke="#FFA000"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+  <!-- Cute Eyes -->
+  <ellipse cx="43" cy="46" rx="3.5" ry="5" fill="#2E1C0C" />
+  <ellipse cx="57" cy="46" rx="3.5" ry="5" fill="#2E1C0C" />
+  <circle cx="44.5" cy="44" r="1.5" fill="#FFFFFF" />
+  <circle cx="58.5" cy="44" r="1.5" fill="#FFFFFF" />
+  <!-- Cheeks -->
+  <circle cx="37" cy="54" r="4" fill="#FF8A80" opacity="0.6" />
+  <circle cx="63" cy="54" r="4" fill="#FF8A80" opacity="0.6" />
+  <!-- Smile -->
+  <path d="M 44 54 Q 50 60 56 54" stroke="#2E1C0C" stroke-width="2.5" fill="none" stroke-linecap="round" />
+</svg>

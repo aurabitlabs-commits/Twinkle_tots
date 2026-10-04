@@ -1,0 +1,8 @@
+{
+  "name": "Twinkle Tots",
+  "description": "ABC, अ आ, 123, shapes, colors & tracing for kids. Fun, interactive, bilingual Hindi/English toddler learning. No ads. Offline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,264 @@
+[
+  {
+    "id": "thirsty_crow",
+    "title": { "en": "The Thirsty Crow", "hi": "प्यासा कौआ" },
+    "coverEmoji": "🦅",
+    "pages": [
+      {
+        "id": "p1",
+        "caption": {
+          "en": "On a hot sunny day, a little crow felt very thirsty.",
+          "hi": "एक गर्म दिन था। छोटा कौआ बहुत प्यासा था।"
+        },
+        "bgEmoji": "☀️",
+        "mainEmoji": "🦅",
+        "hotspots": [
+          { "id": "sun", "name": { "en": "Sun", "hi": "सूरज" }, "emoji": "☀️", "x": 20, "y": 25 },
+          { "id": "crow", "name": { "en": "Crow", "hi": "कौआ" }, "emoji": "🦅", "x": 70, "y": 55 }
+        ]
+      },
+      {
+        "id": "p2",
+        "caption": {
+          "en": "He flew across the garden looking for fresh water.",
+          "hi": "वह बगीचे में पानी ढूँढने के लिए उड़ने लगा।"
+        },
+        "bgEmoji": "🌳",
+        "mainEmoji": "🦅",
+        "hotspots": [
+          { "id": "tree", "name": { "en": "Tree", "hi": "पेड़" }, "emoji": "🌳", "x": 30, "y": 45 },
+          { "id": "flower", "name": { "en": "Flower", "hi": "फूल" }, "emoji": "🌸", "x": 75, "y": 75 }
+        ]
+      },
+      {
+        "id": "p3",
+        "caption": {
+          "en": "He spotted a pitcher with a little water at the bottom.",
+          "hi": "उसे एक मटका दिखा, जिसमें बहुत थोड़ा पानी था।"
+        },
+        "bgEmoji": "🏺",
+        "mainEmoji": "🦅",
+        "hotspots": [
+          { "id": "pitcher", "name": { "en": "Pitcher", "hi": "मटका" }, "emoji": "🏺", "x": 50, "y": 60 },
+          { "id": "crow", "name": { "en": "Crow", "hi": "कौआ" }, "emoji": "🦅", "x": 25, "y": 40 }
+        ]
+      },
+      {
+        "id": "p4",
+        "caption": {
+          "en": "His beak could not reach the water. He thought of a clever plan!",
+          "hi": "उसकी चोंच पानी तक नहीं पहुँच सकी। उसने एक तरकीब सोची!"
+        },
+        "bgEmoji": "💡",
+        "mainEmoji": "🦅",
+        "hotspots": [
+          { "id": "idea", "name": { "en": "Clever Idea", "hi": "तरकीब" }, "emoji": "💡", "x": 50, "y": 25 }
+        ]
+      },
+      {
+        "id": "p5",
+        "caption": {
+          "en": "He picked up small pebbles one by one and dropped them in.",
+          "hi": "उसने एक-एक करके छोटे कंकड़ मटके में डाले।"
+        },
+        "bgEmoji": "🪨",
+        "mainEmoji": "🏺",
+        "hotspots": [
+          { "id": "pebbles", "name": { "en": "Pebbles", "hi": "कंकड़" }, "emoji": "🪨", "x": 30, "y": 70 },
+          { "id": "pitcher", "name": { "en": "Pitcher", "hi": "मटका" }, "emoji": "🏺", "x": 65, "y": 60 }
+        ]
+      },
+      {
+        "id": "p6",
+        "caption": {
+          "en": "The water rose to the top! The crow drank happily and flew away.",
+          "hi": "पानी ऊपर आ गया! कौए ने पानी पिया और खुशी से उड़ गया।"
+        },
+        "bgEmoji": "💧",
+        "mainEmoji": "🦅",
+        "hotspots": [
+          { "id": "water", "name": { "en": "Water", "hi": "पानी" }, "emoji": "💧", "x": 50, "y": 50 }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "question": { "en": "Who was feeling very thirsty?", "hi": "किसे बहुत प्यास लगी थी?" },
+        "options": [
+          { "id": "crow", "label": { "en": "Crow", "hi": "कौआ" }, "emoji": "🦅" },
+          { "id": "frog", "label": { "en": "Frog", "hi": "मेंढक" }, "emoji": "🐸" },
+          { "id": "cat", "label": { "en": "Cat", "hi": "बिल्ली" }, "emoji": "🐱" }
+        ],
+        "correctId": "crow"
+      },
+      {
+        "question": { "en": "What did the crow drop into the pitcher?", "hi": "कौए ने मटके में क्या डाला?" },
+        "options": [
+          { "id": "pebbles", "label": { "en": "Pebbles", "hi": "कंकड़" }, "emoji": "🪨" },
+          { "id": "leaves", "label": { "en": "Leaves", "hi": "पत्ते" }, "emoji": "🍃" },
+          { "id": "flowers", "label": { "en": "Flowers", "hi": "फूल" }, "emoji": "🌸" }
+        ],
+        "correctId": "pebbles"
+      }
+    ]
+  },
+  {
+    "id": "tortoise_hare",
+    "title": { "en": "The Hare and Tortoise", "hi": "खरगोश और कछुआ" },
+    "coverEmoji": "🐢",
+    "pages": [
+      {
+        "id": "p1",
+        "caption": {
+          "en": "A proud hare laughed at a slow, gentle tortoise.",
+          "hi": "एक तेज़ खरगोश धीमे कछुए पर हँस रहा था।"
+        },
+        "bgEmoji": "🌿",
+        "mainEmoji": "🐇",
+        "hotspots": [
+          { "id": "hare", "name": { "en": "Hare", "hi": "खरगोश" }, "emoji": "🐇", "x": 30, "y": 50 },
+          { "id": "tortoise", "name": { "en": "Tortoise", "hi": "कछुआ" }, "emoji": "🐢", "x": 70, "y": 55 }
+        ]
+      },
+      {
+        "id": "p2",
+        "caption": {
+          "en": "They decided to have a race to the big tree!",
+          "hi": "उन्होंने बड़े पेड़ तक दौड़ लगाने का फैसला किया!"
+        },
+        "bgEmoji": "🏁",
+        "mainEmoji": "🌳",
+        "hotspots": [
+          { "id": "flag", "name": { "en": "Flag", "hi": "झंडा" }, "emoji": "🏁", "x": 25, "y": 45 },
+          { "id": "tree", "name": { "en": "Big Tree", "hi": "बड़ा पेड़" }, "emoji": "🌳", "x": 75, "y": 40 }
+        ]
+      },
+      {
+        "id": "p3",
+        "caption": {
+          "en": "The hare zoomed ahead and took a nap under a shady tree.",
+          "hi": "खरगोश तेज़ी से आगे भागा और पेड़ के नीचे सो गया।"
+        },
+        "bgEmoji": "💤",
+        "mainEmoji": "🐇",
+        "hotspots": [
+          { "id": "sleep", "name": { "en": "Sleeping Hare", "hi": "सोता खरगोश" }, "emoji": "💤", "x": 50, "y": 50 }
+        ]
+      },
+      {
+        "id": "p4",
+        "caption": {
+          "en": "The tortoise walked slowly and steadily, step by step.",
+          "hi": "कछुआ धीरे-धीरे बिना रुके लगातार चलता रहा।"
+        },
+        "bgEmoji": "👣",
+        "mainEmoji": "🐢",
+        "hotspots": [
+          { "id": "tortoise", "name": { "en": "Tortoise", "hi": "कछुआ" }, "emoji": "🐢", "x": 50, "y": 60 }
+        ]
+      },
+      {
+        "id": "p5",
+        "caption": {
+          "en": "The hare woke up, but the tortoise was already at the finish line!",
+          "hi": "खरगोश की आँख खुली, पर कछुआ फिनिश लाइन पर पहुँच चुका था!"
+        },
+        "bgEmoji": "🎉",
+        "mainEmoji": "🐢",
+        "hotspots": [
+          { "id": "winner", "name": { "en": "Winner Tortoise", "hi": "विजेता कछुआ" }, "emoji": "🏆", "x": 50, "y": 50 }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "question": { "en": "Who kept walking steadily without stopping?", "hi": "बिना रुके लगातार कौन चलता रहा?" },
+        "options": [
+          { "id": "tortoise", "label": { "en": "Tortoise", "hi": "कछुआ" }, "emoji": "🐢" },
+          { "id": "hare", "label": { "en": "Hare", "hi": "खरगोश" }, "emoji": "🐇" },
+          { "id": "bear", "label": { "en": "Bear", "hi": "भालू" }, "emoji": "🐻" }
+        ],
+        "correctId": "tortoise"
+      }
+    ]
+  },
+  {
+    "id": "lion_mouse",
+    "title": { "en": "The Lion and the Mouse", "hi": "शेर और चूहा" },
+    "coverEmoji": "🦁",
+    "pages": [
+      {
+        "id": "p1",
+        "caption": {
+          "en": "A tiny mouse woke up a big sleeping lion.",
+          "hi": "एक छोटे चूहे ने सोते हुए शेर को जगा दिया।"
+        },
+        "bgEmoji": "🌲",
+        "mainEmoji": "🦁",
+        "hotspots": [
+          { "id": "lion", "name": { "en": "Lion", "hi": "शेर" }, "emoji": "🦁", "x": 40, "y": 45 },
+          { "id": "mouse", "name": { "en": "Mouse", "hi": "चूहा" }, "emoji": "🐭", "x": 75, "y": 65 }
+        ]
+      },
+      {
+        "id": "p2",
+        "caption": {
+          "en": "The lion roared, but the little mouse asked kindly for mercy.",
+          "hi": "शेर गरजा, लेकिन चूहे ने विनती की कि मुझे छोड़ दो।"
+        },
+        "bgEmoji": "👑",
+        "mainEmoji": "🦁",
+        "hotspots": [
+          { "id": "roar", "name": { "en": "Lion", "hi": "शेर" }, "emoji": "🦁", "x": 50, "y": 45 }
+        ]
+      },
+      {
+        "id": "p3",
+        "caption": {
+          "en": "Days later, the lion was caught in a hunter's strong net!",
+          "hi": "कुछ दिनों बाद, शेर शिकारी के मज़बूत जाल में फँस गया!"
+        },
+        "bgEmoji": "🕸️",
+        "mainEmoji": "🦁",
+        "hotspots": [
+          { "id": "net", "name": { "en": "Hunter Net", "hi": "जाल" }, "emoji": "🕸️", "x": 50, "y": 50 }
+        ]
+      },
+      {
+        "id": "p4",
+        "caption": {
+          "en": "The tiny mouse heard his roar and nibbled the ropes quickly.",
+          "hi": "चूहे ने शेर की आवाज़ सुनी और झटपट जाल की रस्सियाँ कुतर दीं।"
+        },
+        "bgEmoji": "✂️",
+        "mainEmoji": "🐭",
+        "hotspots": [
+          { "id": "teeth", "name": { "en": "Sharp Teeth", "hi": "चूहे के दाँत" }, "emoji": "🐭", "x": 50, "y": 55 }
+        ]
+      },
+      {
+        "id": "p5",
+        "caption": {
+          "en": "The lion was free! Even little friends can do big helpful things.",
+          "hi": "शेर आज़ाद हो गया! छोटे दोस्त भी बड़ी मदद कर सकते हैं।"
+        },
+        "bgEmoji": "⭐",
+        "mainEmoji": "🦁",
+        "hotspots": [
+          { "id": "friends", "name": { "en": "Best Friends", "hi": "पक्के दोस्त" }, "emoji": "❤️", "x": 50, "y": 50 }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "question": { "en": "Who helped the big lion escape the net?", "hi": "जाल काटकर शेर को किसने बचाया?" },
+        "options": [
+          { "id": "mouse", "label": { "en": "Mouse", "hi": "चूहा" }, "emoji": "🐭" },
+          { "id": "elephant", "label": { "en": "Elephant", "hi": "हाथी" }, "emoji": "🐘" },
+          { "id": "bird", "label": { "en": "Bird", "hi": "चिड़िया" }, "emoji": "🐦" }
+        ],
+        "correctId": "mouse"
+      }
+    ]
+  }
+]

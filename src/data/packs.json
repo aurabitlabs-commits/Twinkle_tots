@@ -1,0 +1,91 @@
+[
+  {
+    "id": "core_abc",
+    "type": "topic",
+    "title": { "en": "ABC Alphabet", "hi": "ए बी सी" },
+    "tier": "free",
+    "itemCount": 26
+  },
+  {
+    "id": "core_numbers",
+    "type": "topic",
+    "title": { "en": "123 Numbers", "hi": "१ २ ३ संख्याएँ" },
+    "tier": "free",
+    "itemCount": 10
+  },
+  {
+    "id": "core_hindi",
+    "type": "topic",
+    "title": { "en": "Hindi Varnamala", "hi": "हिन्दी वर्णमाला" },
+    "tier": "free",
+    "itemCount": 49
+  },
+  {
+    "id": "core_shapes",
+    "type": "topic",
+    "title": { "en": "Shapes", "hi": "आकार" },
+    "tier": "free",
+    "itemCount": 8
+  },
+  {
+    "id": "core_colors",
+    "type": "topic",
+    "title": { "en": "Colors", "hi": "रंग" },
+    "tier": "free",
+    "itemCount": 10
+  },
+  {
+    "id": "rhymes_free",
+    "type": "rhymes",
+    "title": { "en": "Sing Along Rhymes", "hi": "बाल गीत" },
+    "tier": "free",
+    "itemCount": 6
+  },
+  {
+    "id": "stories_free",
+    "type": "stories",
+    "title": { "en": "Bedtime & Moral Stories", "hi": "कहानियाँ" },
+    "tier": "free",
+    "itemCount": 3
+  },
+  {
+    "id": "plus_animals",
+    "type": "topic",
+    "title": { "en": "Animals & Sounds", "hi": "जानवर और आवाज़ें" },
+    "tier": "plus",
+    "itemCount": 12,
+    "icon": "🦁"
+  },
+  {
+    "id": "plus_fruits_veg",
+    "type": "topic",
+    "title": { "en": "Fruits & Veggies", "hi": "फल और सब्ज़ियाँ" },
+    "tier": "plus",
+    "itemCount": 12,
+    "icon": "🍓"
+  },
+  {
+    "id": "plus_vehicles",
+    "type": "topic",
+    "title": { "en": "Vehicles", "hi": "गाड़ियाँ" },
+    "tier": "plus",
+    "itemCount": 10,
+    "icon": "🚗"
+  },
+  {
+    "id": "plus_body",
+    "type": "topic",
+    "title": { "en": "My Body", "hi": "मेरा शरीर" },
+    "tier": "plus",
+    "itemCount": 8,
+    "icon": "🧒"
+  },
+  {
+    "id": "plus_ginti",
+    "type": "topic",
+    "title": { "en": "Hindi Ginti 1-20", "hi": "हिन्दी गिनती १-२०" },
+    "tier": "plus",
+    "itemCount": 20,
+    "icon": "🔟"
+  }
+]

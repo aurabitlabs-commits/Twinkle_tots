@@ -1,0 +1,82 @@
+[
+  {
+    "id": "twinkle",
+    "lang": "en",
+    "title": "Twinkle Twinkle Little Star",
+    "thumbnail": "⭐",
+    "scenes": ["night_sky", "diamond_sky", "star_field"],
+    "lines": [
+      { "text": "Twinkle, twinkle, little star,", "startMs": 0, "endMs": 4000, "scene": 0 },
+      { "text": "How I wonder what you are!", "startMs": 4000, "endMs": 8000, "scene": 0 },
+      { "text": "Up above the world so high,", "startMs": 8000, "endMs": 12000, "scene": 1 },
+      { "text": "Like a diamond in the sky.", "startMs": 12000, "endMs": 16000, "scene": 1 },
+      { "text": "Twinkle, twinkle, little star,", "startMs": 16000, "endMs": 20000, "scene": 2 },
+      { "text": "How I wonder what you are!", "startMs": 20000, "endMs": 24000, "scene": 2 }
+    ]
+  },
+  {
+    "id": "baa_baa",
+    "lang": "en",
+    "title": "Baa Baa Black Sheep",
+    "thumbnail": "🐑",
+    "scenes": ["meadow", "wool_bags", "farm_lane"],
+    "lines": [
+      { "text": "Baa, baa, black sheep, have you any wool?", "startMs": 0, "endMs": 4500, "scene": 0 },
+      { "text": "Yes sir, yes sir, three bags full!", "startMs": 4500, "endMs": 9000, "scene": 1 },
+      { "text": "One for the master, and one for the dame,", "startMs": 9000, "endMs": 13500, "scene": 1 },
+      { "text": "And one for the little boy who lives down the lane.", "startMs": 13500, "endMs": 18000, "scene": 2 }
+    ]
+  },
+  {
+    "id": "rain_rain",
+    "lang": "en",
+    "title": "Rain Rain Go Away",
+    "thumbnail": "🌧️",
+    "scenes": ["rain_window", "sunny_garden", "happy_kids"],
+    "lines": [
+      { "text": "Rain, rain, go away,", "startMs": 0, "endMs": 3500, "scene": 0 },
+      { "text": "Come again another day!", "startMs": 3500, "endMs": 7000, "scene": 0 },
+      { "text": "Little Johnny wants to play,", "startMs": 7000, "endMs": 10500, "scene": 1 },
+      { "text": "Rain, rain, go away!", "startMs": 10500, "endMs": 14000, "scene": 2 }
+    ]
+  },
+  {
+    "id": "titli_udi",
+    "lang": "hi",
+    "title": "तितली उड़ी बस पर चढ़ी",
+    "thumbnail": "🦋",
+    "scenes": ["flower_garden", "bus_seat", "butterfly_sky"],
+    "lines": [
+      { "text": "तितली उड़ी बस पर चढ़ी,", "startMs": 0, "endMs": 4000, "scene": 0 },
+      { "text": "सीट ना मिली तो रोने लगी।", "startMs": 4000, "endMs": 8000, "scene": 1 },
+      { "text": "ड्राइवर ने बोला आजा मेरे पास,", "startMs": 8000, "endMs": 12000, "scene": 1 },
+      { "text": "तितली बोली ना बाबा ना!", "startMs": 12000, "endMs": 16000, "scene": 2 }
+    ]
+  },
+  {
+    "id": "machhli_jal",
+    "lang": "hi",
+    "title": "मछली जल की रानी है",
+    "thumbnail": "🐟",
+    "scenes": ["blue_pond", "fish_swimming", "splash_water"],
+    "lines": [
+      { "text": "मछली जल की रानी है,", "startMs": 0, "endMs": 3800, "scene": 0 },
+      { "text": "जीवन उसका पानी है।", "startMs": 3800, "endMs": 7600, "scene": 0 },
+      { "text": "हाथ लगाओ तो डर जाएगी,", "startMs": 7600, "endMs": 11400, "scene": 1 },
+      { "text": "बाहर निकालो तो मर जाएगी।", "startMs": 11400, "endMs": 15200, "scene": 2 }
+    ]
+  },
+  {
+    "id": "chanda_mama",
+    "lang": "hi",
+    "title": "चंदा मामा दूर के",
+    "thumbnail": "🌙",
+    "scenes": ["moon_night", "pua_dish", "flying_plate"],
+    "lines": [
+      { "text": "चंदा मामा दूर के,", "startMs": 0, "endMs": 3500, "scene": 0 },
+      { "text": "पुए पकाएँ बूर के।", "startMs": 3500, "endMs": 7000, "scene": 0 },
+      { "text": "आप खाएँ थाली में,", "startMs": 7000, "endMs": 10500, "scene": 1 },
+      { "text": "मुन्ने को दें प्याली में।", "startMs": 10500, "endMs": 14000, "scene": 2 }
+    ]
+  }
+]
