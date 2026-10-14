@@ -43,6 +43,7 @@ import com.example.components.MascotAnimation
 import com.example.components.TaraMascot
 import com.example.ui.theme.Ink
 import com.example.ui.theme.InkLight
+import com.example.ui.theme.OnboardingGradient
 import com.example.ui.theme.Primary
 import com.example.ui.theme.StarYellow
 
@@ -84,13 +85,7 @@ fun OnboardingScreen(
 
     val currentStep = steps[step]
 
-    val gradient = Brush.verticalGradient(
-        colors = listOf(
-            Color(0xFFE8F4F8),
-            Color(0xFFFFF9E6),
-            Color(0xFFFFF3EB)
-        )
-    )
+    val gradient = OnboardingGradient
 
     Box(
         modifier = modifier

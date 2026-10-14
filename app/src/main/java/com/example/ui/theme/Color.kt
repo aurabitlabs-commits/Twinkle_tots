@@ -29,43 +29,110 @@ val StarGaze = Color(0xFFFFF9C4)
 
 // Category Distinct Accents
 val CategoryAbc = Color(0xFFFF7043)       // Coral Orange - Alphabet Adventure
-val CategoryAbcBg = Color(0xFFFFF3E0)
+val CategoryAbcBg = Color(0xFFFFE0B2)     // Rich warm apricot
 val Category123 = Color(0xFF0288D1)       // Sky Blue - Number Garden
-val Category123Bg = Color(0xFFE1F5FE)
+val Category123Bg = Color(0xFFB3E5FC)     // Rich sparkling sky
 val CategoryHindi = Color(0xFFFF5722)     // Saffron Sunrise - वर्णमाला World
-val CategoryHindiBg = Color(0xFFFBE9E7)
+val CategoryHindiBg = Color(0xFFFFCCBC)   // Warm saffron peach
 val CategoryShapes = Color(0xFF8E24AA)    // Amethyst Purple - Shape Planet
-val CategoryShapesBg = Color(0xFFF3E5F5)
+val CategoryShapesBg = Color(0xFFE1BEE7)  // Soft orchid violet
 val CategoryColors = Color(0xFF00897B)    // Mint Teal - Color Garden
-val CategoryColorsBg = Color(0xFFE0F2F1)
+val CategoryColorsBg = Color(0xFFB2DFDB)  // Refreshing mint aqua
 
-// Premium Storybook Pastels
+// Appealing & Attractive Storybook Pastels (Vibrant, high-delight preschool hues)
 val Pastels = listOf(
-    Color(0xFFFFF3E0), // Soft warm peach
-    Color(0xFFE3F2FD), // Soft sky blue
-    Color(0xFFF3E5F5), // Soft lavender dream
-    Color(0xFFE8F5E9), // Gentle mint
-    Color(0xFFFFF9C4), // Sunshine cream
-    Color(0xFFFCE4EC)  // Rosy cloud
+    Color(0xFFFFCC80), // 0: Warm Sunny Peach / Creamsicle
+    Color(0xFF80D8FF), // 1: Radiant Sky Azure
+    Color(0xFFEA80FC), // 2: Candy Orchid Violet
+    Color(0xFFA7FFEB), // 3: Refreshing Aqua Mint
+    Color(0xFFFFE57F), // 4: Glowing Sunshine Gold
+    Color(0xFFFF80AB)  // 5: Playful Strawberry Blossom
 )
 
 val PastelBorders = listOf(
-    Color(0xFFFFCC80),
-    Color(0xFF90CAF9),
-    Color(0xFFCE93D8),
-    Color(0xFFA5D6A7),
-    Color(0xFFFFF59D),
-    Color(0xFFF48FB1)
+    Color(0xFFFF9800),
+    Color(0xFF00B0FF),
+    Color(0xFFAA00FF),
+    Color(0xFF00BFA5),
+    Color(0xFFFFC400),
+    Color(0xFFF50057)
 )
 
 // Gradients for Magical Learning Worlds
-val SkyPlaygroundGradient = Brush.verticalGradient(
+val HomeBackgroundGradient = Brush.verticalGradient(
     colors = listOf(
-        Color(0xFFE0F7FA), // Soft cyan sky
-        Color(0xFFFFF9C4), // Warm sunlight
-        Color(0xFFFFF3E0)  // Peach horizon
+        Color(0xFF4BA3E3), // Sunny Cerulean Sky
+        Color(0xFF6ED4C8), // Soft Turquoise Lagoon
+        Color(0xFFFFD54F), // Radiant Sunlight
+        Color(0xFFFFAB91)  // Warm Peach Glow
     )
 )
+
+val LearnHubGradient = Brush.verticalGradient(
+    colors = listOf(
+        Color(0xFF4FC3F7), // Luminous Sky Blue
+        Color(0xFF81D4FA), // Clear Aqua
+        Color(0xFFA5D6A7), // Lush Spring Mint
+        Color(0xFFFFE082)  // Golden Sunshine
+    )
+)
+
+val PlayHubGradient = Brush.verticalGradient(
+    colors = listOf(
+        Color(0xFFBA68C8), // Playful Amethyst Violet
+        Color(0xFF4DD0E1), // Electric Cyan Lagoon
+        Color(0xFFFFD54F)  // Warm Honey Gold
+    )
+)
+
+val PracticeHubGradient = Brush.verticalGradient(
+    colors = listOf(
+        Color(0xFF26A69A), // Rich Emerald Mint
+        Color(0xFF80CBC4), // Refreshing Aqua Lagoon
+        Color(0xFFFFF176)  // Sunny Lemon Lime
+    )
+)
+
+val StoryRhymeHubGradient = Brush.verticalGradient(
+    colors = listOf(
+        Color(0xFF5C6BC0), // Twilight Periwinkle
+        Color(0xFFAB47BC), // Enchanted Storybook Violet
+        Color(0xFFFFAB91)  // Sunset Peach
+    )
+)
+
+val RewardsGradient = Brush.verticalGradient(
+    colors = listOf(
+        Color(0xFFFFD54F), // Sparkling Trophy Gold
+        Color(0xFFFFB74D), // Sunny Amber
+        Color(0xFFFF8A65)  // Cheerful Coral
+    )
+)
+
+val ParentGateGradient = Brush.verticalGradient(
+    colors = listOf(
+        Color(0xFF80D8FF), // Cheerful Sky
+        Color(0xFFCE93D8)  // Friendly Lavender
+    )
+)
+
+val SplashGradient = Brush.linearGradient(
+    colors = listOf(
+        Color(0xFF38B6FF), // Azure Sky
+        Color(0xFFBA68C8), // Vibrant Violet
+        Color(0xFFFF8C42)  // Warm Tangerine
+    )
+)
+
+val OnboardingGradient = Brush.verticalGradient(
+    colors = listOf(
+        Color(0xFF4BA3E3), // Radiant Sky
+        Color(0xFFFFD54F), // Warm Sunshine
+        Color(0xFFFF8A65)  // Coral Sunrise
+    )
+)
+
+val SkyPlaygroundGradient = HomeBackgroundGradient
 
 val CardGlowGradient = Brush.verticalGradient(
     colors = listOf(

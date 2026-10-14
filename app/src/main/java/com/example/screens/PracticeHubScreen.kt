@@ -39,6 +39,7 @@ import com.example.ui.theme.Category123
 import com.example.ui.theme.CategoryAbc
 import com.example.ui.theme.CategoryHindi
 import com.example.ui.theme.Ink
+import com.example.ui.theme.PracticeHubGradient
 import com.example.ui.theme.Primary
 
 @Composable
@@ -48,13 +49,7 @@ fun PracticeHubScreen(
     onNavigate: (ScreenName) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val gradient = Brush.verticalGradient(
-        colors = listOf(
-            Color(0xFFF3E5F5),
-            Color(0xFFE8F4F8),
-            Color(0xFFFFF9E6)
-        )
-    )
+    val gradient = PracticeHubGradient
 
     Box(
         modifier = modifier

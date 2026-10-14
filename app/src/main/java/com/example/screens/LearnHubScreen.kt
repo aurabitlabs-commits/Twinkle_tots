@@ -48,6 +48,7 @@ import com.example.ui.theme.CategoryShapes
 import com.example.ui.theme.CategoryShapesBg
 import com.example.ui.theme.Ink
 import com.example.ui.theme.InkLight
+import com.example.ui.theme.LearnHubGradient
 import com.example.ui.theme.Primary
 
 @Composable
@@ -57,13 +58,7 @@ fun LearnHubScreen(
     onNavigate: (ScreenName) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val gradient = Brush.verticalGradient(
-        colors = listOf(
-            Color(0xFFE8F4F8),
-            Color(0xFFFFF9E6),
-            Color(0xFFFFF3EB)
-        )
-    )
+    val gradient = LearnHubGradient
 
     Box(
         modifier = modifier

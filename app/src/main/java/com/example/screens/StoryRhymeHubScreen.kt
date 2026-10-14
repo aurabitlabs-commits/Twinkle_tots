@@ -37,6 +37,7 @@ import com.example.components.TaraMascot
 import com.example.model.ScreenName
 import com.example.ui.theme.Ink
 import com.example.ui.theme.Primary
+import com.example.ui.theme.StoryRhymeHubGradient
 
 @Composable
 fun StoryRhymeHubScreen(
@@ -45,14 +46,7 @@ fun StoryRhymeHubScreen(
     onNavigate: (ScreenName) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    // Soothing gentle twilight pastels for story & bedtime
-    val gradient = Brush.verticalGradient(
-        colors = listOf(
-            Color(0xFFE0F2FE),
-            Color(0xFFF3E8FF),
-            Color(0xFFFFF7ED)
-        )
-    )
+    val gradient = StoryRhymeHubGradient
 
     Box(
         modifier = modifier

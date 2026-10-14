@@ -44,6 +44,7 @@ import com.example.model.AppProgress
 import com.example.ui.theme.Ink
 import com.example.ui.theme.InkLight
 import com.example.ui.theme.Primary
+import com.example.ui.theme.RewardsGradient
 import com.example.ui.theme.StarDark
 import com.example.ui.theme.StarYellow
 
@@ -54,13 +55,7 @@ fun RewardsScreen(
     onBack: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val gradient = Brush.verticalGradient(
-        colors = listOf(
-            Color(0xFFFFFBEB),
-            Color(0xFFFFF3E0),
-            Color(0xFFE8F4F8)
-        )
-    )
+    val gradient = RewardsGradient
 
     Box(
         modifier = modifier

@@ -81,12 +81,12 @@ fun ParentZoneScreen(
     val context = LocalContext.current
     var showResetDialog by remember { mutableStateOf(false) }
 
-    // Calm professional parent-zone aesthetic
+    // Calm, appealing parent-zone aesthetic
     val gradient = Brush.verticalGradient(
         colors = listOf(
-            Color(0xFFF8FAFC),
-            Color(0xFFF1F5F9),
-            Color(0xFFE2E8F0)
+            Color(0xFFE8EAF6), // Soft Periwinkle
+            Color(0xFFEDE7F6), // Warm Lavender
+            Color(0xFFFCE4EC)  // Soft Rose
         )
     )
 

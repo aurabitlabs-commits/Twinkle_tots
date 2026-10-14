@@ -40,6 +40,7 @@ import com.example.ui.theme.CategoryAbc
 import com.example.ui.theme.CategoryColors
 import com.example.ui.theme.CategoryShapes
 import com.example.ui.theme.Ink
+import com.example.ui.theme.PlayHubGradient
 import com.example.ui.theme.Primary
 
 @Composable
@@ -49,13 +50,7 @@ fun PlayHubScreen(
     onNavigate: (ScreenName) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val gradient = Brush.verticalGradient(
-        colors = listOf(
-            Color(0xFFFFF9E6),
-            Color(0xFFE8F4F8),
-            Color(0xFFF3E8FF)
-        )
-    )
+    val gradient = PlayHubGradient
 
     Box(
         modifier = modifier

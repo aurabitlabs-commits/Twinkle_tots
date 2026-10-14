@@ -36,6 +36,7 @@ import com.example.ui.theme.Ink
 import com.example.ui.theme.InkLight
 import com.example.ui.theme.Pastels
 import com.example.ui.theme.Primary
+import com.example.ui.theme.SplashGradient
 import kotlinx.coroutines.delay
 
 @Composable
@@ -48,9 +49,7 @@ fun SplashScreen(
         onDone()
     }
 
-    val gradient = Brush.linearGradient(
-        colors = listOf(Pastels[0], Pastels[1], Pastels[3])
-    )
+    val gradient = SplashGradient
 
     val infiniteTransition = rememberInfiniteTransition(label = "dots_anim")
 

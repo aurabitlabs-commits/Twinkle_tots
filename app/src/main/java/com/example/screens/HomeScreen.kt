@@ -61,6 +61,7 @@ import com.example.ui.theme.CategoryAbc
 import com.example.ui.theme.CategoryColors
 import com.example.ui.theme.CategoryHindi
 import com.example.ui.theme.CategoryShapes
+import com.example.ui.theme.HomeBackgroundGradient
 import com.example.ui.theme.Ink
 import com.example.ui.theme.InkLight
 import com.example.ui.theme.Primary
@@ -88,14 +89,7 @@ fun HomeScreen(
         label = "cloud_float"
     )
 
-    // Soft magical playground background gradient
-    val backgroundGradient = Brush.verticalGradient(
-        colors = listOf(
-            Color(0xFFE8F4F8), // Morning sky blue
-            Color(0xFFFFF9E6), // Gentle warm sunlight
-            Color(0xFFFFF3EB)  // Soft peach horizon
-        )
-    )
+    val backgroundGradient = HomeBackgroundGradient
 
     Box(
         modifier = modifier

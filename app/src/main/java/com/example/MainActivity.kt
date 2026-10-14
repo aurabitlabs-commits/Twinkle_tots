@@ -239,7 +239,7 @@ fun TwinkleTotsApp() {
             TopicMenuScreen(
                 title = "ABC Adventure",
                 titleIcon = "🐣",
-                bgColors = listOf(Pastels[0], Pastels[4]),
+                bgColors = listOf(Color(0xFFFF8A65), Color(0xFFFFD54F)),
                 buttons = listOf(
                     TopicButtonItem("Learn", "📖", Primary, ScreenName.ABC_LEARN, "Learn ABC"),
                     TopicButtonItem("Play", "🎮", Success, ScreenName.ABC_PLAY, "Play ABC"),
@@ -255,7 +255,7 @@ fun TwinkleTotsApp() {
             TopicMenuScreen(
                 title = "123 Garden",
                 titleIcon = "🔢",
-                bgColors = listOf(Pastels[1], Pastels[3]),
+                bgColors = listOf(Color(0xFF29B6F6), Color(0xFF81C784)),
                 buttons = listOf(
                     TopicButtonItem("Learn", "📖", Secondary, ScreenName.NUM_LEARN, "Learn Numbers"),
                     TopicButtonItem("Play", "🎮", Success, ScreenName.NUM_PLAY, "Play Numbers"),
@@ -271,7 +271,7 @@ fun TwinkleTotsApp() {
             TopicMenuScreen(
                 title = "अ आ World",
                 titleIcon = "🦚",
-                bgColors = listOf(Pastels[5], Pastels[2]),
+                bgColors = listOf(Color(0xFFFF7043), Color(0xFFFFCA28)),
                 buttons = listOf(
                     TopicButtonItem("Learn", "📖", Color(0xFFFF7043), ScreenName.HINDI_LEARN, "वर्णमाला सीखो"),
                     TopicButtonItem("Play", "🎮", Success, ScreenName.HINDI_PLAY, "वर्णमाला खेलो"),
@@ -287,7 +287,7 @@ fun TwinkleTotsApp() {
             TopicMenuScreen(
                 title = "Shape Planet",
                 titleIcon = "🔺",
-                bgColors = listOf(Pastels[2], Pastels[0]),
+                bgColors = listOf(Color(0xFFAB47BC), Color(0xFF4DD0E1)),
                 buttons = listOf(
                     TopicButtonItem("Learn", "📖", Color(0xFFAB47BC), ScreenName.SHAPES_LEARN, "Learn Shapes"),
                     TopicButtonItem("Find", "🔍", Secondary, ScreenName.SHAPES_FIND, "Find Shape"),
@@ -303,7 +303,7 @@ fun TwinkleTotsApp() {
             TopicMenuScreen(
                 title = "Color Garden",
                 titleIcon = "🎨",
-                bgColors = listOf(Pastels[3], Pastels[1]),
+                bgColors = listOf(Color(0xFFEC407A), Color(0xFFFFB74D)),
                 buttons = listOf(
                     TopicButtonItem("Learn", "📖", Color(0xFF26A69A), ScreenName.COLORS_LEARN, "Learn Colors"),
                     TopicButtonItem("Find", "🔍", Primary, ScreenName.COLORS_FIND, "Find Color"),

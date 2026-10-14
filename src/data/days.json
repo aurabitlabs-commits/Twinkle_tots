@@ -1,9 +1,0 @@
-[
-  { "id": "sun", "index": 0, "en": "Sunday",    "hi": "रविवार",     "color": "#F4623A", "audioEn": "Sunday",    "audioHi": "रविवार" },
-  { "id": "mon", "index": 1, "en": "Monday",    "hi": "सोमवार",     "color": "#F59E0B", "audioEn": "Monday",    "audioHi": "सोमवार" },
-  { "id": "tue", "index": 2, "en": "Tuesday",   "hi": "मंगलवार",    "color": "#EAC435", "audioEn": "Tuesday",   "audioHi": "मंगलवार" },
-  { "id": "wed", "index": 3, "en": "Wednesday", "hi": "बुधवार",     "color": "#4CAF6A", "audioEn": "Wednesday", "audioHi": "बुधवार" },
-  { "id": "thu", "index": 4, "en": "Thursday",  "hi": "गुरुवार",    "color": "#3B82F6", "audioEn": "Thursday",  "audioHi": "गुरुवार" },
-  { "id": "fri", "index": 5, "en": "Friday",    "hi": "शुक्रवार",   "color": "#7C5CD6", "audioEn": "Friday",    "audioHi": "शुक्रवार" },
-  { "id": "sat", "index": 6, "en": "Saturday",  "hi": "शनिवार",     "color": "#E85D9E", "audioEn": "Saturday",  "audioHi": "शनिवार" }
-]
