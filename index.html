@@ -1,31 +1,1074 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/dist/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Twinkle Tots</title>
-    <meta property="og:title" content="Twinkle Tots" />
-    <meta property="og:description" content="ABC, 123, Hindi, Shapes, Colors, Stories & Rhymes for Toddlers" />
-    <script type="module" crossorigin src="/dist/assets/index-C9KccLl2.js"></script>
-    <link rel="stylesheet" crossorigin href="/dist/assets/index-CSS6-zN4.css">
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(135deg, #38B6FF 0%, #68D8D6 35%, #FFD166 70%, #FF9E80 100%) !important;
-        background-attachment: fixed !important;
-        min-height: 100%;
-        font-family: 'Baloo 2', system-ui, -apple-system, sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#38B6FF" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Twinkle Tots" />
+  <title>Twinkle Tots - Toddler Learning</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #FF8C42;
+      --secondary: #38B6FF;
+      --success: #10B981;
+      --star-gold: #FFC107;
+      --ink: #1E293B;
+      --ink-muted: #64748B;
+    }
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      -webkit-user-select: none;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Baloo 2', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #38B6FF 0%, #68D8D6 35%, #FFD166 70%, #FF9E80 100%);
+      background-attachment: fixed;
+      color: var(--ink);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .app-shell {
+      width: 100%;
+      height: 100%;
+      max-width: 480px;
+      max-height: 920px;
+      background: linear-gradient(180deg, #E0F7FA 0%, #FFF9E6 45%, #FFE0B2 100%);
+      box-shadow: 0 20px 60px rgba(56, 182, 255, 0.35), 0 8px 30px rgba(255, 140, 66, 0.25);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    @media (min-width: 481px) {
       .app-shell {
-        background: linear-gradient(180deg, #E8F4F8 0%, #FFF9E6 45%, #FFF0E6 100%) !important;
-        box-shadow: 0 20px 60px rgba(56, 182, 255, 0.28), 0 8px 30px rgba(255, 140, 66, 0.22) !important;
-        border: 5px solid rgba(255, 255, 255, 0.9) !important;
+        height: 94vh;
+        border-radius: 36px;
+        border: 6px solid #FFFFFF;
       }
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px 8px;
+      z-index: 20;
+    }
+    .brand-pill {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--primary);
+      box-shadow: 0 4px 12px rgba(255, 140, 66, 0.25);
+      border: 1.5.dp solid rgba(255, 140, 66, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      letter-spacing: 0.5px;
+    }
+    .right-capsules {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .star-capsule {
+      background: linear-gradient(90deg, #FFF8E1, #FFECB3);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 800;
+      color: #B45309;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px rgba(255, 193, 7, 0.35);
+      border: 1.5px solid rgba(255, 193, 7, 0.5);
+    }
+    .circle-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 2px solid #E2E8F0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .circle-btn:active {
+      transform: scale(0.9);
+    }
+    .screen-content {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 10px 18px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      scrollbar-width: none;
+    }
+    .screen-content::-webkit-scrollbar {
+      display: none;
+    }
+    /* Mascot */
+    .mascot-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 8px 0 16px;
+      cursor: pointer;
+    }
+    .speech-bubble {
+      background: #FFFFFF;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--ink);
+      box-shadow: 0 6px 16px rgba(255, 140, 66, 0.2);
+      border: 2px solid rgba(255, 140, 66, 0.3);
+      margin-bottom: 8px;
+      text-align: center;
+      animation: float 3s ease-in-out infinite;
+    }
+    .mascot-star {
+      font-size: 80px;
+      filter: drop-shadow(0 10px 16px rgba(255, 193, 7, 0.45));
+      animation: bounce 2.2s ease-in-out infinite;
+      transition: transform 0.2s;
+    }
+    .mascot-star:active {
+      transform: scale(1.18) rotate(12deg);
+    }
+    .hero-title {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    /* Cards */
+    .quest-card {
+      width: 100%;
+      background: linear-gradient(135deg, #FF9800, #FF5722);
+      border-radius: 24px;
+      padding: 16px 18px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 10px 24px rgba(255, 87, 34, 0.35);
+      margin-bottom: 16px;
+      cursor: pointer;
+      transition: transform 0.15s;
+    }
+    .quest-card:active {
+      transform: scale(0.98);
+    }
+    .hub-grid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .hub-row {
+      display: flex;
+      gap: 12px;
+      width: 100%;
+    }
+    .hub-card {
+      background: #FFFFFF;
+      border-radius: 24px;
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      border: 2.5px solid transparent;
+      transition: transform 0.15s, box-shadow 0.15s;
+      position: relative;
+    }
+    .hub-card:active {
+      transform: scale(0.96);
+    }
+    .hub-card.hero {
+      flex-direction: row;
+      text-align: left;
+      padding: 18px 20px;
+      gap: 16px;
+      border-color: rgba(255, 112, 67, 0.35);
+    }
+    .card-icon-box {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      flex-shrink: 0;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .card-subtitle {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ink-muted);
+      margin-top: 3px;
+    }
+    .card-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+    /* Subscreens */
+    .screen-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+    .screen-title {
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .flashcard {
+      width: 100%;
+      background: #FFFFFF;
+      border-radius: 32px;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+      border: 4px solid #FFE082;
+      margin: 10px 0 18px;
+      cursor: pointer;
+      position: relative;
+    }
+    .flashcard:active {
+      transform: scale(0.98);
+    }
+    .fc-letter {
+      font-size: 72px;
+      font-weight: 900;
+      color: var(--primary);
+      line-height: 1;
+    }
+    .fc-emoji {
+      font-size: 86px;
+      margin: 10px 0;
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.12));
+    }
+    .fc-word {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+    .nav-arrow-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 300px;
+      margin-top: 10px;
+    }
+    .quiz-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      width: 100%;
+      margin-top: 14px;
+    }
+    .choice-btn {
+      background: #FFFFFF;
+      border: 3px solid #E2E8F0;
+      border-radius: 20px;
+      padding: 16px;
+      font-size: 24px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+      transition: all 0.15s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .choice-btn:active {
+      transform: scale(0.93);
+    }
+    .choice-btn.correct {
+      border-color: var(--success);
+      background: #ECFDF5;
+      color: var(--success);
+    }
+    .choice-btn.wrong {
+      border-color: #EF4444;
+      background: #FEF2F2;
+      color: #EF4444;
+      animation: shake 0.4s;
+    }
+    /* Confetti */
+    .confetti-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      z-index: 100;
+      overflow: hidden;
+      display: none;
+    }
+    .confetti-particle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+      animation: fall 2s linear forwards;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(800px) rotate(720deg); opacity: 0; }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell" id="app">
+    <!-- Top Navigation Bar -->
+    <div class="top-bar">
+      <div class="brand-pill" onclick="goHome()">
+        <span>⭐</span>
+        <span>TWINKLE TOTS</span>
+      </div>
+      <div class="right-capsules">
+        <div class="star-capsule" onclick="speakStars()">
+          <span>⭐</span>
+          <span id="star-count">12</span>
+        </div>
+        <div class="circle-btn" onclick="openParentGate()" title="Parent Zone">
+          🔒
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Dynamic Screen Container -->
+    <div class="screen-content" id="screen-container">
+      <!-- Screen injected dynamically -->
+    </div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-overlay" id="confetti"></div>
+  </div>
+
+  <script>
+    // --- State & Sound Engine ---
+    let stars = parseInt(localStorage.getItem('twinkle_stars') || '12', 10);
+    let currentScreen = 'home';
+    let abcIndex = 0;
+    let numIndex = 0;
+    let hindiIndex = 0;
+    let currentTopic = '';
+
+    const alphabetData = [
+      { l: 'A', w: 'Apple', e: '🍎', p: 'A for Apple' },
+      { l: 'B', w: 'Ball', e: '⚽', p: 'B for Ball' },
+      { l: 'C', w: 'Cat', e: '🐱', p: 'C for Cat' },
+      { l: 'D', w: 'Dog', e: '🐶', p: 'D for Dog' },
+      { l: 'E', w: 'Elephant', e: '🐘', p: 'E for Elephant' },
+      { l: 'F', w: 'Fish', e: '🐟', p: 'F for Fish' },
+      { l: 'G', w: 'Grapes', e: '🍇', p: 'G for Grapes' },
+      { l: 'H', w: 'Hat', e: '🎩', p: 'H for Hat' },
+      { l: 'I', w: 'Ice Cream', e: '🍦', p: 'I for Ice Cream' },
+      { l: 'J', w: 'Juice', e: '🧃', p: 'J for Juice' },
+      { l: 'K', w: 'Kite', e: '🪁', p: 'K for Kite' },
+      { l: 'L', w: 'Lion', e: '🦁', p: 'L for Lion' },
+      { l: 'M', w: 'Monkey', e: '🐵', p: 'M for Monkey' },
+      { l: 'N', w: 'Nest', e: '🪺', p: 'N for Nest' },
+      { l: 'O', w: 'Orange', e: '🍊', p: 'O for Orange' },
+      { l: 'P', w: 'Panda', e: '🐼', p: 'P for Panda' },
+      { l: 'Q', w: 'Queen', e: '👑', p: 'Q for Queen' },
+      { l: 'R', w: 'Rainbow', e: '🌈', p: 'R for Rainbow' },
+      { l: 'S', w: 'Star', e: '⭐', p: 'S for Star' },
+      { l: 'T', w: 'Train', e: '🚂', p: 'T for Train' },
+      { l: 'U', w: 'Umbrella', e: '☂️', p: 'U for Umbrella' },
+      { l: 'V', w: 'Violin', e: '🎻', p: 'V for Violin' },
+      { l: 'W', w: 'Watermelon', e: '🍉', p: 'W for Watermelon' },
+      { l: 'X', w: 'Xylophone', e: '🎵', p: 'X for Xylophone' },
+      { l: 'Y', w: 'Yo-yo', e: '🪀', p: 'Y for Yo-yo' },
+      { l: 'Z', w: 'Zebra', e: '🦓', p: 'Z for Zebra' }
+    ];
+
+    const numbersData = [
+      { n: 1, w: 'One', e: '🍎', p: 'Number One, one apple' },
+      { n: 2, w: 'Two', e: '🎈🎈', p: 'Number Two, two balloons' },
+      { n: 3, w: 'Three', e: '⭐⭐⭐', p: 'Number Three, three stars' },
+      { n: 4, w: 'Four', e: '🐶🐶🐶🐶', p: 'Number Four, four puppies' },
+      { n: 5, w: 'Five', e: '🌸🌸🌸🌸🌸', p: 'Number Five, five flowers' },
+      { n: 6, w: 'Six', e: '🐟🐟🐟🐟🐟🐟', p: 'Number Six, six little fish' },
+      { n: 7, w: 'Seven', e: '🧁🧁🧁🧁🧁🧁🧁', p: 'Number Seven, seven cupcakes' },
+      { n: 8, w: 'Eight', e: '🚗🚗🚗🚗🚗🚗🚗🚗', p: 'Number Eight, eight cars' },
+      { n: 9, w: 'Nine', e: '🍓🍓🍓🍓🍓🍓🍓🍓🍓', p: 'Number Nine, nine strawberries' },
+      { n: 10, w: 'Ten', e: '🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉', p: 'Number Ten, ten party poppers' }
+    ];
+
+    const hindiData = [
+      { l: 'अ', w: 'अनार', e: '🍎', p: 'अ से अनार' },
+      { l: 'आ', w: 'आम', e: '🥭', p: 'आ से आम' },
+      { l: 'इ', w: 'इमली', e: '🌱', p: 'इ से इमली' },
+      { l: 'ई', w: 'ईख', e: '🎋', p: 'ई से ईख' },
+      { l: 'उ', w: 'उल्लू', e: '🦉', p: 'उ से उल्लू' },
+      { l: 'ऊ', w: 'ऊन', e: '🧶', p: 'ऊ से ऊन' },
+      { l: 'ऋ', w: 'ऋषि', e: '🧘', p: 'ऋ से ऋषि' },
+      { l: 'ए', w: 'एड़ी', e: '🦶', p: 'ए से एड़ी' },
+      { l: 'ऐ', w: 'ऐनक', e: '👓', p: 'ऐ से ऐनक' },
+      { l: 'ओ', w: 'ओखली', e: '🥣', p: 'ओ से ओखली' },
+      { l: 'औ', w: 'औरत', e: '👩', p: 'औ से औरत' },
+      { l: 'अं', w: 'अंगूर', e: '🍇', p: 'अं से अंगूर' }
+    ];
+
+    // Web Audio Synthesizer
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    function playTone(type) {
+      if (!audioCtx) return;
+      try {
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        const now = audioCtx.currentTime;
+
+        if (type === 'tap') {
+          osc.frequency.setValueAtTime(440, now);
+          osc.frequency.exponentialRampToValueAtTime(880, now + 0.08);
+          gain.gain.setValueAtTime(0.2, now);
+          gain.gain.linearRampToValueAtTime(0.01, now + 0.08);
+          osc.start(now);
+          osc.stop(now + 0.08);
+        } else if (type === 'pop') {
+          osc.frequency.setValueAtTime(260, now);
+          osc.frequency.exponentialRampToValueAtTime(520, now + 0.12);
+          gain.gain.setValueAtTime(0.3, now);
+          gain.gain.linearRampToValueAtTime(0.01, now + 0.12);
+          osc.start(now);
+          osc.stop(now + 0.12);
+        } else if (type === 'win') {
+          [523.25, 659.25, 783.99, 1046.5].forEach((freq, i) => {
+            const o = audioCtx.createOscillator();
+            const g = audioCtx.createGain();
+            o.connect(g);
+            g.connect(audioCtx.destination);
+            o.frequency.setValueAtTime(freq, now + i * 0.09);
+            g.gain.setValueAtTime(0.25, now + i * 0.09);
+            g.gain.linearRampToValueAtTime(0.01, now + (i + 1) * 0.09);
+            o.start(now + i * 0.09);
+            o.stop(now + (i + 1) * 0.09);
+          });
+        }
+      } catch (e) {}
+    }
+
+    function speak(text, lang = 'en-US') {
+      try {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = lang;
+        u.rate = 0.9;
+        u.pitch = 1.25;
+        window.speechSynthesis.speak(u);
+      } catch(e) {}
+    }
+
+    function addStar(count = 1) {
+      stars += count;
+      localStorage.setItem('twinkle_stars', stars.toString());
+      document.getElementById('star-count').innerText = stars;
+      playTone('win');
+      fireConfetti();
+    }
+
+    function speakStars() {
+      playTone('pop');
+      speak(`You have collected ${stars} shiny golden stars! Awesome!`);
+    }
+
+    function fireConfetti() {
+      const c = document.getElementById('confetti');
+      c.innerHTML = '';
+      c.style.display = 'block';
+      const colors = ['#FFD700', '#FF4081', '#00E676', '#00B0FF', '#FF9100', '#D500F9'];
+      for (let i = 0; i < 40; i++) {
+        const p = document.createElement('div');
+        p.className = 'confetti-particle';
+        p.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        p.style.left = Math.random() * 100 + '%';
+        p.style.top = -10 + 'px';
+        p.style.animationDelay = (Math.random() * 0.5) + 's';
+        p.style.animationDuration = (1.5 + Math.random()) + 's';
+        c.appendChild(p);
+      }
+      setTimeout(() => { c.style.display = 'none'; }, 2500);
+    }
+
+    // --- Screens ---
+    function renderHome() {
+      const container = document.getElementById('screen-container');
+      container.innerHTML = `
+        <div class="mascot-container" onclick="tapTara()">
+          <div class="speech-bubble" id="tara-bubble">Ready to play & learn? ✨</div>
+          <div class="mascot-star">⭐</div>
+          <div class="hero-title">Learning Playground</div>
+        </div>
+
+        <div class="quest-card" onclick="startQuest()">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="font-size: 32px; background: rgba(255,255,255,0.25); border-radius: 14px; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;">🚀</div>
+            <div>
+              <div style="font-size: 10px; font-weight: 800; opacity: 0.9; letter-spacing: 0.5px;">🌟 DAILY QUEST</div>
+              <div style="font-size: 18px; font-weight: 800;">Today's Adventure</div>
+              <div style="font-size: 12px; opacity: 0.9;">ABC Quest ➔ 3 Stars</div>
+            </div>
+          </div>
+          <div style="background: #FFFFFF; color: var(--primary); padding: 6px 14px; border-radius: 16px; font-weight: 800; font-size: 13px;">Start ▶</div>
+        </div>
+
+        <div class="hub-grid">
+          <div class="hub-card hero" onclick="renderLearnHub()">
+            <div class="card-icon-box" style="background: #FFE0B2;">🐣</div>
+            <div>
+              <div class="card-title">📚 Learn Worlds</div>
+              <div class="card-subtitle">ABC, 123, Hindi, Shapes & Colors</div>
+              <span class="card-badge" style="background: #FFE0B2; color: #E65100;">⭐ 5 WORLDS</span>
+            </div>
+          </div>
+
+          <div class="hub-row">
+            <div class="hub-card" onclick="renderPlayHub()">
+              <div class="card-icon-box" style="background: #E1BEE7;">🎮</div>
+              <div class="card-title" style="margin-top: 8px;">Play Hub</div>
+              <div class="card-subtitle">Games & Quizzes</div>
+            </div>
+            <div class="hub-card" onclick="renderAbcLearn()">
+              <div class="card-icon-box" style="background: #B2DFDB;">🔤</div>
+              <div class="card-title" style="margin-top: 8px;">ABC Cards</div>
+              <div class="card-subtitle">All 26 Letters</div>
+            </div>
+          </div>
+
+          <div class="hub-row">
+            <div class="hub-card" onclick="render123Learn()">
+              <div class="card-icon-box" style="background: #B3E5FC;">🔢</div>
+              <div class="card-title" style="margin-top: 8px;">123 Garden</div>
+              <div class="card-subtitle">Tap & Count</div>
+            </div>
+            <div class="hub-card" onclick="renderHindiLearn()">
+              <div class="card-icon-box" style="background: #FFCCBC;">🦚</div>
+              <div class="card-title" style="margin-top: 8px;">अ आ World</div>
+              <div class="card-subtitle">वर्णमाला सीखो</div>
+            </div>
+          </div>
+
+          <div class="hub-row">
+            <div class="hub-card" onclick="renderRhymes()">
+              <div class="card-icon-box" style="background: #FFF9C4;">🎵</div>
+              <div class="card-title" style="margin-top: 8px;">Songs</div>
+              <div class="card-subtitle">Rhymes & Fun</div>
+            </div>
+            <div class="hub-card" onclick="renderRewards()">
+              <div class="card-icon-box" style="background: #FFE082;">🏆</div>
+              <div class="card-title" style="margin-top: 8px;">Rewards</div>
+              <div class="card-subtitle">Stars & Badges</div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function tapTara() {
+      playTone('pop');
+      document.getElementById('tara-bubble').innerText = "Yay! Let's explore together! 🎈";
+      speak("Hi little star! What shall we explore next?");
+    }
+
+    function startQuest() {
+      playTone('tap');
+      speak("Today's Adventure! Let's play ABC Quiz!");
+      renderAbcQuiz();
+    }
+
+    function renderLearnHub() {
+      const container = document.getElementById('screen-container');
+      container.innerHTML = `
+        <div class="screen-header">
+          <div class="circle-btn" onclick="renderHome()">⬅️</div>
+          <div class="screen-title">Learn Worlds 📚</div>
+          <div style="width: 44px;"></div>
+        </div>
+        <div class="hub-grid" style="margin-top: 10px;">
+          <div class="hub-card hero" onclick="renderAbcLearn()">
+            <div class="card-icon-box" style="background: #FFE0B2;">🐣</div>
+            <div>
+              <div class="card-title">ABC Adventure</div>
+              <div class="card-subtitle">Phonics, words and pictures</div>
+            </div>
+          </div>
+          <div class="hub-card hero" onclick="render123Learn()">
+            <div class="card-icon-box" style="background: #B3E5FC;">🔢</div>
+            <div>
+              <div class="card-title">123 Garden</div>
+              <div class="card-subtitle">Counting from 1 to 10</div>
+            </div>
+          </div>
+          <div class="hub-card hero" onclick="renderHindiLearn()">
+            <div class="card-icon-box" style="background: #FFCCBC;">🦚</div>
+            <div>
+              <div class="card-title">अ आ World</div>
+              <div class="card-subtitle">हिन्दी वर्णमाला</div>
+            </div>
+          </div>
+          <div class="hub-card hero" onclick="renderShapesLearn()">
+            <div class="card-icon-box" style="background: #E1BEE7;">🔺</div>
+            <div>
+              <div class="card-title">Shape Planet</div>
+              <div class="card-subtitle">Circles, stars and triangles</div>
+            </div>
+          </div>
+          <div class="hub-card hero" onclick="renderColorsLearn()">
+            <div class="card-icon-box" style="background: #B2DFDB;">🎨</div>
+            <div>
+              <div class="card-title">Color Garden</div>
+              <div class="card-subtitle">Rainbow bright colors</div>
+            </div>
+          </div>
+        </div>
+      `;
+      speak("Choose a learning world!");
+    }
+
+    function renderAbcLearn() {
+      const item = alphabetData[abcIndex];
+      const container = document.getElementById('screen-container');
+      container.innerHTML = `
+        <div class="screen-header">
+          <div class="circle-btn" onclick="renderHome()">⬅️</div>
+          <div class="screen-title">ABC Adventure 🐣</div>
+          <div class="circle-btn" onclick="speak('${item.p}')">🔊</div>
+        </div>
+
+        <div class="flashcard" onclick="speak('${item.p}'); playTone('pop');">
+          <div class="fc-letter">${item.l} ${item.l.toLowerCase()}</div>
+          <div class="fc-emoji">${item.e}</div>
+          <div class="fc-word">${item.w}</div>
+          <div style="font-size: 13px; color: var(--ink-muted); margin-top: 6px;">Tap to listen 🔊</div>
+        </div>
+
+        <div class="nav-arrow-row">
+          <div class="circle-btn" onclick="prevAbc()" style="font-size: 24px;">◀</div>
+          <div style="font-weight: 800; font-size: 16px;">${abcIndex + 1} / ${alphabetData.length}</div>
+          <div class="circle-btn" onclick="nextAbc()" style="font-size: 24px;">▶</div>
+        </div>
+      `;
+      speak(item.p);
+    }
+
+    function nextAbc() {
+      playTone('tap');
+      abcIndex = (abcIndex + 1) % alphabetData.length;
+      renderAbcLearn();
+    }
+    function prevAbc() {
+      playTone('tap');
+      abcIndex = (abcIndex - 1 + alphabetData.length) % alphabetData.length;
+      renderAbcLearn();
+    }
+
+    function render123Learn() {
+      const item = numbersData[numIndex];
+      const container = document.getElementById('screen-container');
+      container.innerHTML = `
+        <div class="screen-header">
+          <div class="circle-btn" onclick="renderHome()">⬅️</div>
+          <div class="screen-title">123 Garden 🔢</div>
+          <div class="circle-btn" onclick="speak('${item.p}')">🔊</div>
+        </div>
+
+        <div class="flashcard" onclick="speak('${item.p}'); playTone('pop');">
+          <div class="fc-letter" style="color: #0288D1;">${item.n}</div>
+          <div class="fc-word" style="font-size: 28px; margin-bottom: 8px;">${item.w}</div>
+          <div style="font-size: 42px; line-height: 1.3; text-align: center; max-width: 260px;">${item.e}</div>
+          <div style="font-size: 13px; color: var(--ink-muted); margin-top: 10px;">Tap to count 🔊</div>
+        </div>
+
+        <div class="nav-arrow-row">
+          <div class="circle-btn" onclick="prev123()" style="font-size: 24px;">◀</div>
+          <div style="font-weight: 800; font-size: 16px;">${numIndex + 1} / ${numbersData.length}</div>
+          <div class="circle-btn" onclick="next123()" style="font-size: 24px;">▶</div>
+        </div>
+      `;
+      speak(item.p);
+    }
+    function next123() {
+      playTone('tap');
+      numIndex = (numIndex + 1) % numbersData.length;
+      render123Learn();
+    }
+    function prev123() {
+      playTone('tap');
+      numIndex = (numIndex - 1 + numbersData.length) % numbersData.length;
+      render123Learn();
+    }
+
+    function renderHindiLearn() {
+      const item = hindiData[hindiIndex];
+      const container = document.getElementById('screen-container');
+      container.innerHTML = `
+        <div class="screen-header">
+          <div class="circle-btn" onclick="renderHome()">⬅️</div>
+          <div class="screen-title">अ आ World 🦚</div>
+          <div class="circle-btn" onclick="speak('${item.p}', 'hi-IN')">🔊</div>
+        </div>
+
+        <div class="flashcard" onclick="speak('${item.p}', 'hi-IN'); playTone('pop');">
+          <div class="fc-letter" style="color: #E64A19;">${item.l}</div>
+          <div class="fc-emoji">${item.e}</div>
+          <div class="fc-word">${item.w}</div>
+          <div style="font-size: 13px; color: var(--ink-muted); margin-top: 6px;">सुनने के लिए छुएं 🔊</div>
+        </div>
+
+        <div class="nav-arrow-row">
+          <div class="circle-btn" onclick="prevHindi()" style="font-size: 24px;">◀</div>
+          <div style="font-weight: 800; font-size: 16px;">${hindiIndex + 1} / ${hindiData.length}</div>
+          <div class="circle-btn" onclick="nextHindi()" style="font-size: 24px;">▶</div>
+        </div>
+      `;
+      speak(item.p, 'hi-IN');
+    }
+    function nextHindi() {
+      playTone('tap');
+      hindiIndex = (hindiIndex + 1) % hindiData.length;
+      renderHindiLearn();
+    }
+    function prevHindi() {
+      playTone('tap');
+      hindiIndex = (hindiIndex - 1 + hindiData.length) % hindiData.length;
+      renderHindiLearn();
+    }
+
+    function renderShapesLearn() {
+      const shapes = [
+        { n: 'Circle', e: '⚪', d: 'Round like a coin and ball' },
+        { n: 'Square', e: '🟩', d: 'Four equal sides' },
+        { n: 'Triangle', e: '🔺', d: 'Three pointy corners' },
+        { n: 'Star', e: '⭐', d: 'Five bright glowing points' },
+        { n: 'Heart', e: '💖', d: 'Sweet lovely heart' }
+      ];
+      const container = document.getElementById('screen-container');
+      container.innerHTML = `
+        <div class="screen-header">
+          <div class="circle-btn" onclick="renderHome()">⬅️</div>
+          <div class="screen-title">Shape Planet 🔺</div>
+          <div style="width: 44px;"></div>
+        </div>
+        <div class="hub-grid" style="margin-top: 10px;">
+          ${shapes.map(s => `
+            <div class="hub-card hero" onclick="speak('${s.n}! ${s.d}'); playTone('pop');">
+              <div class="card-icon-box" style="font-size: 40px; background: #F3E5F5;">${s.e}</div>
+              <div>
+                <div class="card-title">${s.n}</div>
+                <div class="card-subtitle">${s.d}</div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      speak("Shape Planet! Tap any shape to hear its story!");
+    }
+
+    function renderColorsLearn() {
+      const colors = [
+        { n: 'Red', e: '🍎', hex: '#EF4444' },
+        { n: 'Blue', e: '🌊', hex: '#3B82F6' },
+        { n: 'Green', e: '🍏', hex: '#10B981' },
+        { n: 'Yellow', e: '🍌', hex: '#F59E0B' },
+        { n: 'Purple', e: '🍇', hex: '#8B5CF6' },
+        { n: 'Pink', e: '🌸', hex: '#EC4899' }
+      ];
+      const container = document.getElementById('screen-container');
+      container.innerHTML = `
+        <div class="screen-header">
+          <div class="circle-btn" onclick="renderHome()">⬅️</div>
+          <div class="screen-title">Color Garden 🎨</div>
+          <div style="width: 44px;"></div>
+        </div>
+        <div class="hub-grid" style="margin-top: 10px;">
+          ${colors.map(c => `
+            <div class="hub-card hero" onclick="speak('${c.n}! Like this ${c.e}'); playTone('pop');">
+              <div class="card-icon-box" style="background: ${c.hex}; font-size: 32px;">${c.e}</div>
+              <div>
+                <div class="card-title" style="color: ${c.hex};">${c.n}</div>
+                <div class="card-subtitle">Tap to explore ${c.n}</div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      speak("Color Garden! Tap to explore bright colors!");
+    }
+
+    function renderPlayHub() {
+      const container = document.getElementById('screen-container');
+      container.innerHTML = `
+        <div class="screen-header">
+          <div class="circle-btn" onclick="renderHome()">⬅️</div>
+          <div class="screen-title">Play Zone 🎮</div>
+          <div style="width: 44px;"></div>
+        </div>
+        <div class="hub-grid" style="margin-top: 10px;">
+          <div class="hub-card hero" onclick="renderAbcQuiz()">
+            <div class="card-icon-box" style="background: #FFE0B2;">🐣</div>
+            <div>
+              <div class="card-title">ABC Quiz Quest</div>
+              <div class="card-subtitle">Listen & find the matching letter</div>
+            </div>
+          </div>
+          <div class="hub-card hero" onclick="render123Quiz()">
+            <div class="card-icon-box" style="background: #B3E5FC;">🔢</div>
+            <div>
+              <div class="card-title">Counting Challenge</div>
+              <div class="card-subtitle">Count the cute objects!</div>
+            </div>
+          </div>
+        </div>
+      `;
+      speak("Welcome to the Play Zone! Let's play a game!");
+    }
+
+    function renderAbcQuiz() {
+      const target = alphabetData[Math.floor(Math.random() * alphabetData.length)];
+      let choices = [target];
+      while (choices.length < 4) {
+        const rand = alphabetData[Math.floor(Math.random() * alphabetData.length)];
+        if (!choices.includes(rand)) choices.push(rand);
+      }
+      choices.sort(() => Math.random() - 0.5);
+
+      const container = document.getElementById('screen-container');
+      container.innerHTML = `
+        <div class="screen-header">
+          <div class="circle-btn" onclick="renderPlayHub()">⬅️</div>
+          <div class="screen-title">Find the Letter! 🎯</div>
+          <div class="circle-btn" onclick="speak('Find letter ${target.l}')">🔊</div>
+        </div>
+
+        <div class="flashcard">
+          <div style="font-size: 16px; font-weight: 800; color: var(--ink-muted);">Listen carefully:</div>
+          <div style="font-size: 64px; margin: 10px 0;">❓</div>
+          <div style="font-size: 20px; font-weight: 800; color: var(--primary);">"Find letter ${target.l}"</div>
+        </div>
+
+        <div class="quiz-options">
+          ${choices.map(c => `
+            <div class="choice-btn" onclick="checkAbcAnswer(this, '${c.l}', '${target.l}')">
+              <span>${c.l}</span>
+              <span style="font-size: 18px;">${c.e}</span>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      speak(`Find letter ${target.l}`);
+    }
+
+    function checkAbcAnswer(btn, chosen, target) {
+      if (chosen === target) {
+        btn.classList.add('correct');
+        speak(`Awesome! ${target} is correct!`);
+        addStar(1);
+        setTimeout(() => renderAbcQuiz(), 1600);
+      } else {
+        btn.classList.add('wrong');
+        playTone('tap');
+        speak(`Try again! Can you find letter ${target}?`);
+      }
+    }
+
+    function render123Quiz() {
+      const target = numbersData[Math.floor(Math.random() * numbersData.length)];
+      let choices = [target.n];
+      while (choices.length < 4) {
+        const r = Math.floor(Math.random() * 10) + 1;
+        if (!choices.includes(r)) choices.push(r);
+      }
+      choices.sort(() => Math.random() - 0.5);
+
+      const container = document.getElementById('screen-container');
+      container.innerHTML = `
+        <div class="screen-header">
+          <div class="circle-btn" onclick="renderPlayHub()">⬅️</div>
+          <div class="screen-title">How Many? 🔢</div>
+          <div class="circle-btn" onclick="speak('How many do you see?')">🔊</div>
+        </div>
+
+        <div class="flashcard">
+          <div style="font-size: 16px; font-weight: 800; color: var(--ink-muted);">Count the items:</div>
+          <div style="font-size: 44px; margin: 14px 0; max-width: 280px; text-align: center;">${target.e}</div>
+          <div style="font-size: 18px; font-weight: 800; color: var(--primary);">How many items are here?</div>
+        </div>
+
+        <div class="quiz-options">
+          ${choices.map(n => `
+            <div class="choice-btn" onclick="check123Answer(this, ${n}, ${target.n})">
+              <span>${n}</span>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      speak("How many items are here? Count them!");
+    }
+
+    function check123Answer(btn, chosen, target) {
+      if (chosen === target) {
+        btn.classList.add('correct');
+        speak(`Hooray! That is ${target}! Great counting!`);
+        addStar(1);
+        setTimeout(() => render123Quiz(), 1600);
+      } else {
+        btn.classList.add('wrong');
+        playTone('tap');
+        speak(`Oops, count carefully! Try again!`);
+      }
+    }
+
+    function renderRhymes() {
+      const songs = [
+        { title: 'Twinkle Twinkle Little Star', icon: '⭐', desc: 'How I wonder what you are' },
+        { title: 'Wheels on the Bus', icon: '🚌', desc: 'Go round and round all day' },
+        { title: 'Old MacDonald Had a Farm', icon: '🚜', desc: 'E-I-E-I-O with cheerful animals' },
+        { title: 'Five Little Ducks', icon: '🦆', desc: 'Went out one day over the hill' }
+      ];
+      const container = document.getElementById('screen-container');
+      container.innerHTML = `
+        <div class="screen-header">
+          <div class="circle-btn" onclick="renderHome()">⬅️</div>
+          <div class="screen-title">Rhymes & Songs 🎵</div>
+          <div style="width: 44px;"></div>
+        </div>
+        <div class="hub-grid" style="margin-top: 10px;">
+          ${songs.map(s => `
+            <div class="hub-card hero" onclick="playSong('${s.title}');">
+              <div class="card-icon-box" style="background: #FFF9C4; font-size: 32px;">${s.icon}</div>
+              <div>
+                <div class="card-title">${s.title}</div>
+                <div class="card-subtitle">${s.desc}</div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      speak("Rhymes and Songs! Tap to sing along!");
+    }
+
+    function playSong(title) {
+      playTone('win');
+      speak(`Now playing ${title}! Sing along little star!`);
+      addStar(1);
+    }
+
+    function renderRewards() {
+      const container = document.getElementById('screen-container');
+      container.innerHTML = `
+        <div class="screen-header">
+          <div class="circle-btn" onclick="renderHome()">⬅️</div>
+          <div class="screen-title">My Rewards 🏆</div>
+          <div style="width: 44px;"></div>
+        </div>
+        <div class="flashcard">
+          <div style="font-size: 72px;">⭐</div>
+          <div style="font-size: 32px; font-weight: 800; color: #B45309;">${stars} Stars</div>
+          <div style="font-size: 14px; font-weight: 700; color: var(--ink-muted); margin-top: 4px;">Super Star Champion!</div>
+        </div>
+        <div class="hub-grid">
+          <div class="hub-card hero">
+            <div class="card-icon-box" style="background: #FFE082;">🏅</div>
+            <div>
+              <div class="card-title">Alphabet Explorer</div>
+              <div class="card-subtitle">Mastered ABC letters</div>
+            </div>
+          </div>
+          <div class="hub-card hero">
+            <div class="card-icon-box" style="background: #B3E5FC;">🎖️</div>
+            <div>
+              <div class="card-title">Number Champion</div>
+              <div class="card-subtitle">Mastered 123 numbers</div>
+            </div>
+          </div>
+        </div>
+      `;
+      speak(`You have earned ${stars} stars! You are doing amazing!`);
+    }
+
+    function openParentGate() {
+      const a = Math.floor(Math.random() * 4) + 2;
+      const b = Math.floor(Math.random() * 4) + 1;
+      const ans = a + b;
+      const response = prompt(`Parent Gate (Adults Only):\n\nWhat is ${a} + ${b}?`);
+      if (parseInt(response, 10) === ans) {
+        alert("Parent Zone Unlocked!\n\nSound Effects: Enabled\nVoice Speech: Enabled\nStars: " + stars + "\n\nTip: You can add this app to your mobile home screen via browser menu!");
+      }
+    }
+
+    function goHome() {
+      playTone('tap');
+      renderHome();
+    }
+
+    // Initialize Home
+    renderHome();
+  </script>
+</body>
 </html>

@@ -173,7 +173,7 @@ fun TracingScreen(
                                 // Stroke validation: check if drawn path roughly spans the current stroke
                                 val stroke = currentItem.strokes.getOrNull(currentStrokeIdx)
                                 if (stroke != null && userPath.size >= 5) {
-                                    soundManager.playTone(ToneType.CHIME)
+                                    soundManager.playTone(ToneType.CORRECT)
                                     val nextCompleted = completedStrokes + currentStrokeIdx
                                     completedStrokes = nextCompleted
                                     userPath = emptyList()

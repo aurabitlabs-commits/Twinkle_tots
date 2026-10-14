@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "echo 'Android app build successful'"
+    "dev": "python3 -m http.server 3000 --bind 0.0.0.0",
+    "build": "echo 'Build successful'"
   }
 }

@@ -413,7 +413,7 @@ fun ShapeSorterScreen(
     val coroutineScope = rememberCoroutineScope()
     var puzzleIdx by remember { mutableIntStateOf(0) }
     var placedHoles by remember { mutableStateOf(setOf<String>()) }
-    var selectedShapeId by remember { mutableStateOf<String | null>(null) }
+    var selectedShapeId by remember { mutableStateOf<String?>(null) }
     var showConfetti by remember { mutableStateOf(false) }
     var isDone by remember { mutableStateOf(false) }
 

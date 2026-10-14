@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -180,7 +181,8 @@ fun OnboardingScreen(
                     val isActive = i == step
                     Box(
                         modifier = Modifier
-                            .size(if (isActive) 24.dp to 10.dp else 10.dp to 10.dp)
+                            .height(10.dp)
+                            .width(if (isActive) 24.dp else 10.dp)
                             .clip(CircleShape)
                             .background(if (isActive) Primary else Color(0xFFCBD5E1))
                     )
